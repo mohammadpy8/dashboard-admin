@@ -1,13 +1,8 @@
 import React from 'react';
-import Features from '../../components/features/Features';
-import "./Home.css";
+import Features from './../../components/features/Feature'
 
-const Home = () => {
-    return (
-        <div>
-            <Features />
-        </div>
-    );
-};
-
-export default Home;
+export default function Home() {
+  return (
+    <Features />
+  )
+}

@@ -1,23 +1,24 @@
-import React from 'react';
-import routes from './routes';
-import { useRoutes } from 'react-router-dom';
-import TopBar from './components/topBar/TopBar';
-import SideBar from './components/sideBar/SideBar';
-import "./App.css";
+import React from 'react'
+import routes from './routes'
+import { useRoutes } from 'react-router-dom'
+import Topbar from './components/topbar/Topbar'
+import Sidebar from './components/sidebar/Sidebar'
 
-function App() {
+import './App.css'
 
-  const router = useRoutes(routes);
+export default function App() {
 
-  return (
-    < >
-      <TopBar />
-      <div className='container'>
-        <SideBar />
-        {router}
-      </div>
-    </>
-  );
+    let router = useRoutes(routes)
+
+    return (
+        <>
+            <Topbar />
+            <div className="container">
+                <Sidebar />
+                {router}
+            </div>
+        </>
+    )
 }
 
-export default App;
+

@@ -1,12 +1,12 @@
-import React from 'react';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import "./Features.css";
+import React from "react";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
-const Features = () => {
+import "./features.css";
 
-    return (
-        <div className="features">
+export default function Feature() {
+  return (
+    <div className="features">
       <div className="featureItem">
         <span className="featureTitle">Revanue</span>
         <div className="featureContainer">
@@ -38,7 +38,5 @@ const Features = () => {
         <span className="featureSub">Compared to last month</span>
       </div>
     </div>
-    );
-};
-
-export default Features;
+  );
+}
