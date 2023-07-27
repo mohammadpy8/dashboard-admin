@@ -1,8 +1,9 @@
 import React from "react";
-import "./Topbar.css";
+import "./Topbar.css"
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import LanguageIcon from '@mui/icons-material/Language';
 import SettingsIcon from '@mui/icons-material/Settings';
+import logo from "../../image/logo192.png";
 
 export default function Topbar() {
   return (
@@ -24,7 +25,7 @@ export default function Topbar() {
           <div className="topbarIconContainer">
             <SettingsIcon />
           </div>
-          <img src="logo512.png" className="topAvatar" />
+          <img src={logo} className="topAvatar" />
         </div>
       </div>
     </div>
