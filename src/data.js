@@ -76,5 +76,40 @@ const newMembers = [
     },
 ];
 
+const transactions = [
+    {
+        id: 1,
+        customer: 'Qadir',
+        date: '12 Jun 2022',
+        amount: 123,
+        status: 'Approved',
+        img: 'logo192.png'
+    },
+    {
+        id: 2,
+        customer: 'Amin',
+        date: '23 Jul 2022',
+        amount: 123,
+        status: 'Declined',
+        img: 'logo192.png'
+    },
+    {
+        id: 3,
+        customer: 'Mohammad',
+        date: '28 May 2022',
+        amount: 123,
+        status: 'Pending',
+        img: 'logo192.png'
+    },
+    {
+        id: 4,
+        customer: 'Sasan',
+        date: '1 Feb 2022',
+        amount: 123,
+        status: 'Approved',
+        img: 'logo192.png'
+    },
+];
+
 export default xAxisData;
-export { newMembers };
+export { newMembers,transactions };
