@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Chart from '../../components/chart/Chart';
 import { productsData } from '../../data';
 import Logo from "../../image/logo192.png";
+import PublishIcon from '@mui/icons-material/Publish';
 import "./Product.css";
 
 const Product = () => {
@@ -50,6 +51,39 @@ const Product = () => {
                     </div>
 
                 </div>
+            </div>
+
+            <div className="productBottom">
+                <form className="productForm">
+                    <div className="productFormLeft">
+                        <label className=''>Product Name</label>
+                        <input type="text" placeholder='Dell Laptop' />
+
+                        <label>In Stock</label>
+                        <select id="inStock">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+
+                        <label>Active</label>
+                        <select id="inStock">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div className="productFormRight">
+                        <div className="productUploader">
+                            <img src={Logo} alt="logo" className='productUploadImg' />
+                            <label>
+                                <PublishIcon />
+                            </label>
+                            <input type="file" style={{display : "none"}} />
+                        </div>
+
+                        <button className='productEditBtn'>Upload(Edit)</button>
+
+                    </div>
+                </form>
             </div>
 
         </div>
