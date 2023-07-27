@@ -49,4 +49,32 @@ const xAxisData = [
     },
 ];
 
+const newMembers = [
+    {
+        id: 1,
+        username: 'Mohammad Amin',
+        title: 'Web Developer',
+        img: 'logo192.png'
+    },
+    {
+        id: 2,
+        username: 'Sasas Moq',
+        title: 'Seo Eng',
+        img: 'logo192.png'
+    },
+    {
+        id: 3,
+        username: 'Zahra Agayi',
+        title: 'Weblog',
+        img: 'logo192.png'
+    },
+    {
+        id: 4,
+        username: 'Moghammad',
+        title: 'Hacker',
+        img: 'logo192.png'
+    },
+];
+
 export default xAxisData;
+export { newMembers };
