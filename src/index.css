@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,600&display=swap');
 
 *{
-    font-family: 'Ubuntu','Jost', sans-serif;
+    font-family: 'Ubuntu','Jost', sans-serif !important;
 }
 
 a {
