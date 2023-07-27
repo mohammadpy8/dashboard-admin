@@ -152,7 +152,34 @@ const userRows = [
         transaction: '$55.98',
         email: 'amin@gmail.com'
     }
+];
+
+const products = [
+    {
+        id: 1,
+        title: 'Asus',
+        avatar: 'logo192.png',
+        price: 890
+    },
+    {
+        id: 2,
+        title: 'Acer',
+        avatar: 'logo192.png',
+        price: 890
+    },
+    {
+        id: 3,
+        title: 'HP',
+        avatar: 'logo192.png',
+        price: 890
+    },
+    {
+        id: 4,
+        title: 'Dell',
+        avatar: 'logo192.png',
+        price: 890
+    },
 ]
 
 export default xAxisData;
-export { newMembers,transactions, userRows };
+export { newMembers,transactions, userRows, products };
