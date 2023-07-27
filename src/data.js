@@ -111,5 +111,48 @@ const transactions = [
     },
 ];
 
+const userRows = [
+    {
+        id: 1,
+        username: 'Qadir',
+        avatar: 'logo192.png',
+        status: 'active',
+        transaction: '$129.52',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 2,
+        username: 'Amin',
+        avatar: 'logo192.png',
+        status: 'non-active',
+        transaction: '$110',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 3,
+        username: 'Sasan',
+        avatar: 'logo192.png',
+        status: 'active',
+        transaction: '$98',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 4,
+        username: 'Zahra',
+        avatar: 'logo192.png',
+        status: 'active',
+        transaction: '$0',
+        email: 'amin@gmail.com'
+    },
+    {
+        id: 5,
+        username: 'Hamze',
+        avatar: 'logo192.png',
+        status: 'active',
+        transaction: '$55.98',
+        email: 'amin@gmail.com'
+    }
+]
+
 export default xAxisData;
-export { newMembers,transactions };
+export { newMembers,transactions, userRows };
