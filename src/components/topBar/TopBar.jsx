@@ -24,7 +24,7 @@ export default function Topbar() {
           <div className="topbarIconContainer">
             <SettingsIcon />
           </div>
-          <img src="logo192.png" className="topAvatar" />
+          <img src="logo512.png" className="topAvatar" />
         </div>
       </div>
     </div>
