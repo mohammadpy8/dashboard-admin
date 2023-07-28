@@ -6,6 +6,7 @@ import Sidebar from './components/sidebar/Sidebar'
 
 import './App.css'
 import Pagination from './Pagination/Pagination'
+import According from './According/According'
 
 export default function App() {
 
@@ -21,6 +22,7 @@ export default function App() {
                 {router}
             </div> */}
             <Pagination />
+            <According />
         </>
     )
 }
