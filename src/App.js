@@ -6,7 +6,8 @@ import Sidebar from './components/sidebar/Sidebar'
 
 import './App.css'
 import Pagination from './Pagination/Pagination'
-import According from './According/According'
+import According from './According/According';
+import AppFliter from './FliterProduct/App'
 
 export default function App() {
 
@@ -21,8 +22,9 @@ export default function App() {
                 <Sidebar />
                 {router}
             </div> */}
-            <Pagination />
-            <According />
+            {/* <Pagination /> */}
+            {/* <According /> */}
+            <AppFliter />
         </>
     )
 }
