@@ -23,15 +23,16 @@ const Pagination = () => {
 
     }, []);
 
-    const changePaginate = (newPage) => {
+    useEffect(() => {
 
-        setCurrentPage(newPage);
         const endIndex = pageSize * currentPage;
         const startIndex = endIndex - pageSize;
         const allShowTodos = todos.slice(startIndex, endIndex);
         setPagonatedTodos(allShowTodos);
 
-    }; 
+    }, [currentPage]);
+
+    const changePaginate = (newPage) => setCurrentPage(newPage); 
 
     const pagesCount = Math.ceil(todos.length / pageSize);
     pagesNumber = Array.from(Array(pagesCount).keys());
