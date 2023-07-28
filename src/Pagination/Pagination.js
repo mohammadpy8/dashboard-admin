@@ -15,11 +15,23 @@ const Pagination = () => {
             .then(response => response.json())
             .then(json => {
                 setTodos(json);
+                const endIndex = pageSize * currentPage;
+                const startIndex = endIndex - pageSize;
+                const allShowTodos = json.slice(startIndex, endIndex);
+                setPagonatedTodos(allShowTodos);
             });
 
     }, []);
 
-    const changePaginate = (newPage) => setCurrentPage(newPage); 
+    const changePaginate = (newPage) => {
+
+        setCurrentPage(newPage);
+        const endIndex = pageSize * currentPage;
+        const startIndex = endIndex - pageSize;
+        const allShowTodos = todos.slice(startIndex, endIndex);
+        setPagonatedTodos(allShowTodos);
+
+    }; 
 
     const pagesCount = Math.ceil(todos.length / pageSize);
     pagesNumber = Array.from(Array(pagesCount).keys());
@@ -39,7 +51,7 @@ const Pagination = () => {
                         </thead>
                         <tbody>
                             {
-                                todos.map(todo => (
+                                paginatedTodos.map(todo => (
                                     <tr key={todo.id}>
                                         <td>{todo.id}</td>
                                         <td>{todo.userId}</td>
@@ -64,6 +76,7 @@ const Pagination = () => {
                     {
                         pagesNumber.map((page, index) => (
                             <li
+                                style={{cursor: "pointer", borderRadius: "10px"}}
                                 class={page + 1 === currentPage ? "page-item page-link active" :
                                     "page-item page-link"} key={index}
                                 onClick={() => changePaginate(page + 1)}
